@@ -3,6 +3,8 @@
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 
 
+
+
 var biciclette = [
     {
         nome:"Bicicletta 1",
@@ -31,5 +33,10 @@ var bicicletteOrdinato= biciclette.sort(function(a,b){
     return a.peso-b.peso;
 })
 
-// Stampare a schermo la bici con peso minore.
-console.log(bicicletteOrdinato[0])
+let [biciclettaLeggera]= bicicletteOrdinato;
+//Stampare a schermo la bici con peso minore utilizzando destructuring e template literal.
+
+
+console.log(`La bicicletta che pesa di meno è ${biciclettaLeggera.nome}`)
+
+
